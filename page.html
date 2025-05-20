@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identidade Local e Construção Sustentável</title>
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --primary-light: #60ad5e;
+            --primary-dark: #005005;
+            --secondary: #ff8f00;
+            --light: #f5f5f5;
+            --dark: #212121;
+            --gray: #757575;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background-color: #ff6f00;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--primary-dark);
+            font-size: 2.5rem;
+        }
+        
+        .benefits {
+            background-color: var(--light);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .benefit-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .features {
+            background-color: white;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+        
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .metrics {
+            background-color: var(--primary-light);
+            color: white;
+        }
+        
+        .metrics-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .metric {
+            text-align: center;
+            margin: 20px;
+        }
+        
+        .metric-value {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .testimonial {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            font-style: italic;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-author {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Construa o futuro preservando o passado</h1>
+            <h2>Arquitetura sustentável com identidade cultural</h2>
+            <a href="#cta" class="cta-button">Junte-se à Revolução Sustentável</a>
+        </div>
+    </header>
+    
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">Principais Benefícios</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌍</div>
+                    <h3>Redução do Impacto Ambiental</h3>
+                    <ul style="text-align: left; padding-left: 20px;">
+                        <li>Até 35% menos emissões de carbono</li>
+                        <li>20% redução nos custos de construção</li>
+                        <li>Minimização do desperdício de materiais</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🏛️</div>
+                    <h3>Fortalecimento da Identidade Cultural</h3>
+                    <ul style="text-align: left; padding-left: 20px;">
+                        <li>Designs que respeitam a herança arquitetônica local</li>
+                        <li>Integração de técnicas tradicionais comprovadas</li>
+                        <li>Maior senso de pertencimento comunitário</li>
+                    </ul>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Eficiência Inteligente</h3>
+                    <ul style="text-align: left; padding-left: 20px;">
+                        <li>Modelagem assistida por IA adaptada ao clima local</li>
+                        <li>Sistemas modulares que reduzem o tempo de construção em 30%</li>
+                        <li>Plataforma colaborativa conectando arquitetos e artesãos locais</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Funcionalidades Principais</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Recurso</th>
+                        <th>Benefício</th>
+                        <th>Impacto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Banco de Materiais Regionais</td>
+                        <td>Acesso a cortiça, argila e outros materiais sustentáveis locais</td>
+                        <td>Reduz transporte e emissões</td>
+                    </tr>
+                    <tr>
+                        <td>Modelagem por IA</td>
+                        <td>Designs otimizados para clima e cultura</td>
+                        <td>Economiza tempo e recursos</td>
+                    </tr>
+                    <tr>
+                        <td>Construção Modular</td>
+                        <td>Sistemas pré-fabricados com materiais locais</td>
+                        <td>30% mais rápido que métodos tradicionais</td>
+                    </tr>
+                    <tr>
+                        <td>Rede de Cooperação</td>
+                        <td>Conexão com artesãos e especialistas locais</td>
+                        <td>Preserva técnicas tradicionais</td>
+                    </tr>
+                    <tr>
+                        <td>Monitoramento</td>
+                        <td>Relatórios automáticos de sustentabilidade</td>
+                        <td>Comprova redução de impacto</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <section class="metrics">
+        <div class="container">
+            <h2 class="section-title">Métricas Comprovadas</h2>
+            <div class="metrics-container">
+                <div class="metric">
+                    <div class="metric-value">35%</div>
+                    <div>redução nas emissões de carbono</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">20%</div>
+                    <div>economia nos custos de construção</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">30%</div>
+                    <div>menos tempo nos projetos</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">90%</div>
+                    <div>satisfação da comunidade local</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="testimonial">
+                <p>"Esta solução representa a perfeita fusão entre tradição e inovação, permitindo-nos honrar nosso patrimônio enquanto construímos um futuro mais verde."</p>
+                <div class="testimonial-author">Maria, Arquiteta em Lisboa</div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cta" style="text-align: center; padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title">Pronto para transformar sua forma de construir?</h2>
+            <a href="#" class="cta-button">Cadastre-se para acesso antecipado</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Identidade Local e Construção Sustentável. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
